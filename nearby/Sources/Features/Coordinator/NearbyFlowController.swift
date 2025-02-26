@@ -1,23 +1,23 @@
 //
-//  FlowCoordinator.swift
-//  nearby
+//  NearbyFlowController.swift
+//  Nearby
 //
 //  Created by Eduardo Sant Ana Sales on 25/02/25.
+//
+//  Class responsible for coordinating navigation between app screens
 //
 
 import Foundation
 import UIKit
 
-class FlowCoordinator {
+class NearbyFlowController {
     private var navigationController: UINavigationController?
     
-    public init() {
-        
-    }
+    public init() {}
     
     func start() -> UINavigationController? {
-        let startViewController = UIViewController()
-        startViewController.view.backgroundColor = .red
+        let contentView = SplashView()
+        let startViewController = SplashViewController(contentView: contentView)
         self.navigationController = UINavigationController(rootViewController: startViewController)
         return navigationController
     }
