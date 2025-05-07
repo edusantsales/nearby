@@ -8,16 +8,16 @@
 import Foundation
 import UIKit
 
-class SplashView : UIView {
+class SplashView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupUI()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     let logoImageView: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "logoImage")
@@ -25,26 +25,38 @@ class SplashView : UIView {
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
-    
-    let backgroundImage: UIImageView = {
+
+    let backgroundImageView: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "backgroundImage")
         image.contentMode = .scaleAspectFit
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
-    
+
     private func setupUI() {
         self.addSubview(logoImageView)
-        self.addSubview(backgroundImage)
+        self.addSubview(backgroundImageView)
         setupConstraints()
     }
-    
+
     private func setupConstraints() {
+        setupLogoImageView()
+        setupBackgroundImageView()
+    }
+
+    private func setupLogoImageView() {
         NSLayoutConstraint.activate([
             logoImageView.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             logoImageView.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            backgroundImage.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+        ])
+    }
+
+    private func setupBackgroundImageView() {
+        NSLayoutConstraint.activate([
+            backgroundImageView.bottomAnchor.constraint(
+                equalTo: self.bottomAnchor
+            )
         ])
     }
 }
