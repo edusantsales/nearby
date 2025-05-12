@@ -180,10 +180,7 @@ class HomeView: UIView {
             button.addTarget(self, action: #selector(filterButtonTapped(_:)), for: .touchUpInside)
             
             if (button.tag == 0) {
-                button.backgroundColor = Colors.greenBase
-                button.setTitleColor(Colors.gray100, for: .normal)
-                button.tintColor = Colors.gray100
-                filterButtonTapped(button)
+                updateButtonSelection(button: button)
             }
             
             categoryFilterStackView.addArrangedSubview(button)
