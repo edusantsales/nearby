@@ -92,8 +92,8 @@ Para clonar e executar esta aplicação, você precisará ter o **Node.js**, **n
 
 ## 📂 Estrutura do Projeto
 
-- **backend/**: Contém o código-fonte do servidor Node.js com Express, incluindo as rotas da API, configurações do Prisma e validações com Zod.
-- **ios/**: Contém o código-fonte do aplicativo iOS desenvolvido em Swift utilizando UIKit.
+- **nearby-api/**: Contém o código-fonte do servidor Node.js com Express, incluindo as rotas da API, configurações do Prisma e validações com Zod.
+- **nearby/**: Contém o código-fonte do aplicativo iOS desenvolvido em Swift utilizando UIKit.
 
 ## 🎯 Aprendizados e Desafios
 
