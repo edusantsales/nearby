@@ -1,3 +1,5 @@
+![Capa](https://github.com/user-attachments/assets/be271173-d5f9-42f8-a7b2-ead43b224893)
+
 # 📍 Nearby
 
 **Nearby** é um aplicativo mobile de clube de benefícios que oferece cupons para utilização em estabelecimentos próximos a você. Com uma interface intuitiva e funcionalidades robustas, o aplicativo proporciona uma experiência única para usuários em busca de ofertas locais.
