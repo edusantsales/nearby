@@ -20,6 +20,10 @@
 
 - **Comunicação**:
   - [Axios](https://axios-http.com/): Cliente HTTP baseado em promessas para realizar requisições à API.
+ 
+## 🎨 Layout do Projeto
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/community/file/1448070647757721748). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
 ## 🌟 Funcionalidades
 
