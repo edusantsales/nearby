@@ -1,12 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Nearby
-//
-//  Created by Eduardo Sant Ana Sales on 25/02/25.
-//
-//  Class responsible for controlling the app's scenes
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -14,7 +5,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var flowController: NearbyFlowController?
 
     func scene(
-        _ scene: UIScene, willConnectTo session: UISceneSession,
+        _ scene: UIScene,
+        willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

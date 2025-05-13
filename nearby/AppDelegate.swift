@@ -1,12 +1,3 @@
-//
-//  AppDelegate.swift
-//  Nearby
-//
-//  Created by Eduardo Sant Ana Sales on 25/02/25.
-//
-//  Main class to launch the application
-//
-
 import UIKit
 
 @main
@@ -31,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to select a configuration to create the new scene with.
         return UISceneConfiguration(
             name: "Default Configuration",
-            sessionRole: connectingSceneSession.role)
+            sessionRole: connectingSceneSession.role
+        )
     }
 
     func application(
