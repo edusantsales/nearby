@@ -1,12 +1,3 @@
-//
-//  NearbyFlowController.swift
-//  Nearby
-//
-//  Created by Eduardo Sant Ana Sales on 25/02/25.
-//
-//  Class responsible for coordinating navigation between app screens
-//
-
 import Foundation
 import UIKit
 
@@ -16,10 +7,8 @@ class NearbyFlowController {
     public init() {}
 
     func start() -> UINavigationController? {
-        let contentView = SplashView()
-        let startViewController = SplashViewController(
-            contentView: contentView, delegate: self
-        )
+        let startViewController = SplashViewController()
+        startViewController.flowDelegate = self
         self.navigationController = UINavigationController(
             rootViewController: startViewController
         )
@@ -28,14 +17,15 @@ class NearbyFlowController {
 }
 
 extension NearbyFlowController: SplashFlowDelegate {
-    func decideNavigationFlow() {
+    func goToWelcome() {
         let contentView = WelcomeView()
         let welcomeViewController = WelcomeViewController(
             contentView: contentView
         )
         welcomeViewController.flowDelegate = self
         navigationController?.pushViewController(
-            welcomeViewController, animated: true
+            welcomeViewController,
+            animated: true
         )
     }
 }
@@ -44,7 +34,8 @@ extension NearbyFlowController: WelcomeFlowDelegate {
     func goToHome() {
         let homeViewController = HomeViewController()
         navigationController?.pushViewController(
-            homeViewController, animated: true
+            homeViewController,
+            animated: true
         )
     }
 }
