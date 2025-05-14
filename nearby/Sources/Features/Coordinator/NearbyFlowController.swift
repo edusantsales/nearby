@@ -4,8 +4,6 @@ import UIKit
 class NearbyFlowController {
     private var navigationController: UINavigationController?
 
-    public init() {}
-
     func start() -> UINavigationController? {
         let startViewController = SplashViewController()
         startViewController.flowDelegate = self
@@ -18,10 +16,7 @@ class NearbyFlowController {
 
 extension NearbyFlowController: SplashFlowDelegate {
     func goToWelcome() {
-        let contentView = WelcomeView()
-        let welcomeViewController = WelcomeViewController(
-            contentView: contentView
-        )
+        let welcomeViewController = WelcomeViewController()
         welcomeViewController.flowDelegate = self
         navigationController?.pushViewController(
             welcomeViewController,
