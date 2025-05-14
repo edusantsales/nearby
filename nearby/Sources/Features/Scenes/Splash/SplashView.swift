@@ -38,11 +38,21 @@ class SplashView: UIView {
         NSLayoutConstraint.activate([
             logoImageView.centerXAnchor.constraint(equalTo: centerXAnchor),
             logoImageView.centerYAnchor.constraint(equalTo: centerYAnchor),
-            
-            backgroundImageView.topAnchor.constraint(equalTo: logoImageView.bottomAnchor),
-            backgroundImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            backgroundImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            backgroundImageView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: 10),
+        ])
+        NSLayoutConstraint.activate([
+            backgroundImageView.topAnchor.constraint(
+                equalTo: logoImageView.bottomAnchor
+            ),
+            backgroundImageView.leadingAnchor.constraint(
+                equalTo: leadingAnchor
+            ),
+            backgroundImageView.trailingAnchor.constraint(
+                equalTo: trailingAnchor
+            ),
+            backgroundImageView.bottomAnchor.constraint(
+                equalTo: safeAreaLayoutGuide.bottomAnchor,
+                constant: 10
+            ),
         ])
     }
 }
