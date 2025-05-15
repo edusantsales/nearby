@@ -5,7 +5,7 @@ class WelcomeView: UIView {
     var goToHome: (() -> Void?)?
 
     @objc
-    private func didTapButton() { goToHome?() }
+    private func startButtonTapped() { goToHome?() }
 
     // Components
     private let headerView: WelcomeHeaderView = {
@@ -18,7 +18,7 @@ class WelcomeView: UIView {
         let view = WelcomeBodyView()
         view.startButton.addTarget(
             self,
-            action: #selector(didTapButton),
+            action: #selector(startButtonTapped),
             for: .touchUpInside
         )
         view.translatesAutoresizingMaskIntoConstraints = false
