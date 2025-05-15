@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class TipsView: UIView {
+class WelcomeTipsView: UIView {
     // Components
     private let iconImageView: UIImageView = {
         let image = UIImageView()

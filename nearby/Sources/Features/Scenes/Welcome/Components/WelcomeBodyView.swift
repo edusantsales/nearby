@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class BodyView: UIView {
+class WelcomeBodyView: UIView {
     // Components
     private let seeHowItWorksLabel: UILabel = {
         let label = UILabel()
@@ -14,20 +14,20 @@ class BodyView: UIView {
     }()
 
     private let tipsStackView: UIStackView = {
-        let tip1 = TipsView(
+        let tip1 = WelcomeTipsView(
             icon: UIImage(named: "map-pin") ?? UIImage(),
             title: "Encontre estabelecimentos",
             description: "Veja locais perto de você que são parceiros Nearby"
         )
 
-        let tip2 = TipsView(
+        let tip2 = WelcomeTipsView(
             icon: UIImage(named: "qrcode") ?? UIImage(),
             title: "Ative o cupom com QR Code",
             description:
                 "Escaneie o código no estabelecimento para usar o benefício"
         )
 
-        let tip3 = TipsView(
+        let tip3 = WelcomeTipsView(
             icon: UIImage(named: "ticket") ?? UIImage(),
             title: "Garanta vantagens perto de você",
             description:

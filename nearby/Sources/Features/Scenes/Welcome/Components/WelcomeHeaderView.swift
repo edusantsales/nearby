@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class HeaderView: UIView {
+class WelcomeHeaderView: UIView {
     // Components
     private let logoImageView: UIImageView = {
         let image = UIImageView()

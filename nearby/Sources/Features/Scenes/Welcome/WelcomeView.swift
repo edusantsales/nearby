@@ -8,14 +8,14 @@ class WelcomeView: UIView {
     private func didTapButton() { goToHome?() }
 
     // Components
-    private let headerView: HeaderView = {
-        let view = HeaderView()
+    private let headerView: WelcomeHeaderView = {
+        let view = WelcomeHeaderView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
 
-    private let bodyView: BodyView = {
-        let view = BodyView()
+    private let bodyView: WelcomeBodyView = {
+        let view = WelcomeBodyView()
         view.startButton.addTarget(
             self,
             action: #selector(didTapButton),
