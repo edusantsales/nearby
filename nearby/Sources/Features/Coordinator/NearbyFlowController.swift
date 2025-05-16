@@ -18,7 +18,7 @@ extension NearbyFlowController: SplashFlowDelegate {
     func goToWelcome() {
         let welcomeViewController = WelcomeViewController()
         welcomeViewController.flowDelegate = self
-        navigationController?.pushViewController(
+        self.navigationController?.pushViewController(
             welcomeViewController,
             animated: true
         )
@@ -28,8 +28,20 @@ extension NearbyFlowController: SplashFlowDelegate {
 extension NearbyFlowController: WelcomeFlowDelegate {
     func goToHome() {
         let homeViewController = HomeViewController()
-        navigationController?.pushViewController(
+        homeViewController.flowDelegate = self
+        self.navigationController?.pushViewController(
             homeViewController,
+            animated: true
+        )
+    }
+}
+
+extension NearbyFlowController: HomeFlowDelegate {
+    func goToPlaceDetails(place: Place) {
+        let placeDetailViewController = PlaceDetailViewController()
+        placeDetailViewController.place = place
+        self.navigationController?.pushViewController(
+            placeDetailViewController,
             animated: true
         )
     }

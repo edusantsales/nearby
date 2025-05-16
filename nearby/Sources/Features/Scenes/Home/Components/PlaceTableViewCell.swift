@@ -4,7 +4,8 @@ import UIKit
 class PlaceTableViewCell: UITableViewCell {
     static let identifier = "PlaceTableViewCell"
 
-    var itemImageView: UIImageView = {
+    // Components
+    var placeImageView: UIImageView = {
         let image = UIImageView()
         image.backgroundColor = Colors.gray200
         image.clipsToBounds = true
@@ -14,29 +15,29 @@ class PlaceTableViewCell: UITableViewCell {
         return image
     }()
 
-    let titleLabel: UILabel = {
+    let placeNameLabel: UILabel = {
         let label = UILabel()
         label.font = Typography.titleSM
-        label.textColor = Colors.gray600
         label.numberOfLines = 0
+        label.textColor = Colors.gray600
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
-    let descriptionLabel: UILabel = {
+    let placeDescriptionLabel: UILabel = {
         let label = UILabel()
         label.font = Typography.textXS.withSize(10)
-        label.textColor = Colors.gray500
         label.numberOfLines = 0
+        label.textColor = Colors.gray500
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
-    let ticketIconView: UIImageView = {
+    let ticketImageView: UIImageView = {
         let image = UIImageView()
-        image.image = UIImage(named: "ticketIcon")
-        image.tintColor = Colors.redBase
         image.contentMode = .scaleAspectFit
+        image.image = UIImage(named: "ticket")
+        image.tintColor = Colors.redBase
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -44,8 +45,8 @@ class PlaceTableViewCell: UITableViewCell {
     let ticketLabel: UILabel = {
         let label = UILabel()
         label.font = Typography.textXS.withSize(10)
-        label.textColor = Colors.gray400
         label.numberOfLines = 0
+        label.textColor = Colors.gray400
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -53,8 +54,8 @@ class PlaceTableViewCell: UITableViewCell {
     let containerView: UIView = {
         let view = UIView()
         view.backgroundColor = Colors.gray100
-        view.layer.borderWidth = 1
         view.layer.borderColor = Colors.gray200.cgColor
+        view.layer.borderWidth = 1
         view.layer.cornerRadius = 12
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -64,19 +65,19 @@ class PlaceTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         // Set UITableViewCell Background Color
         self.backgroundColor = .clear
-        setupUI()
+        setupView()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func setupUI() {
+    private func setupView() {
         addSubview(containerView)
-        containerView.addSubview(itemImageView)
-        containerView.addSubview(titleLabel)
-        containerView.addSubview(descriptionLabel)
-        containerView.addSubview(ticketIconView)
+        containerView.addSubview(placeImageView)
+        containerView.addSubview(placeNameLabel)
+        containerView.addSubview(placeDescriptionLabel)
+        containerView.addSubview(ticketImageView)
         containerView.addSubview(ticketLabel)
         setupConstraints()
     }
@@ -86,53 +87,109 @@ class PlaceTableViewCell: UITableViewCell {
             containerView.topAnchor.constraint(equalTo: topAnchor, constant: 6),
             containerView.leadingAnchor.constraint(equalTo: leadingAnchor),
             containerView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            containerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -6),
-            
-            itemImageView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 8),
-            itemImageView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 8),
-            itemImageView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -8),
-            itemImageView.centerYAnchor.constraint(equalTo: containerView.centerYAnchor),
-            itemImageView.heightAnchor.constraint(equalToConstant: 104),
-            itemImageView.widthAnchor.constraint(equalToConstant: 116),
-            
-            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 10),
-            titleLabel.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 16),
-            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8),
-            
-            descriptionLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
-            descriptionLabel.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 16),
-            descriptionLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -8),
-            
-            ticketIconView.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 10),
-            ticketIconView.leadingAnchor.constraint(equalTo: itemImageView.trailingAnchor, constant: 16),
-            ticketIconView.heightAnchor.constraint(equalToConstant: 16),
-            ticketIconView.widthAnchor.constraint(equalToConstant: 16),
-            
-            ticketLabel.topAnchor.constraint(equalTo: descriptionLabel.bottomAnchor, constant: 8),
-            ticketLabel.centerYAnchor.constraint(equalTo: ticketIconView.centerYAnchor),
-            ticketLabel.leadingAnchor.constraint(equalTo: ticketIconView.trailingAnchor, constant: 4),
+            containerView.bottomAnchor.constraint(
+                equalTo: bottomAnchor,
+                constant: -6
+            ),
+        ])
+        NSLayoutConstraint.activate([
+            placeImageView.topAnchor.constraint(
+                equalTo: containerView.topAnchor,
+                constant: 8
+            ),
+            placeImageView.leadingAnchor.constraint(
+                equalTo: containerView.leadingAnchor,
+                constant: 8
+            ),
+            placeImageView.bottomAnchor.constraint(
+                equalTo: containerView.bottomAnchor,
+                constant: -8
+            ),
+            placeImageView.centerYAnchor.constraint(
+                equalTo: containerView.centerYAnchor
+            ),
+            placeImageView.heightAnchor.constraint(equalToConstant: 104),
+            placeImageView.widthAnchor.constraint(equalToConstant: 116),
+        ])
+        NSLayoutConstraint.activate([
+            placeNameLabel.topAnchor.constraint(
+                equalTo: containerView.topAnchor,
+                constant: 10
+            ),
+            placeNameLabel.leadingAnchor.constraint(
+                equalTo: placeImageView.trailingAnchor,
+                constant: 16
+            ),
+            placeNameLabel.trailingAnchor.constraint(
+                equalTo: containerView.trailingAnchor,
+                constant: -8
+            ),
+        ])
+        NSLayoutConstraint.activate([
+            placeDescriptionLabel.topAnchor.constraint(
+                equalTo: placeNameLabel.bottomAnchor,
+                constant: 4
+            ),
+            placeDescriptionLabel.leadingAnchor.constraint(
+                equalTo: placeImageView.trailingAnchor,
+                constant: 16
+            ),
+            placeDescriptionLabel.trailingAnchor.constraint(
+                equalTo: containerView.trailingAnchor,
+                constant: -8
+            ),
+        ])
+        NSLayoutConstraint.activate([
+            ticketImageView.topAnchor.constraint(
+                equalTo: placeDescriptionLabel.bottomAnchor,
+                constant: 10
+            ),
+            ticketImageView.leadingAnchor.constraint(
+                equalTo: placeImageView.trailingAnchor,
+                constant: 16
+            ),
+            ticketImageView.heightAnchor.constraint(equalToConstant: 16),
+            ticketImageView.widthAnchor.constraint(equalToConstant: 16),
+        ])
+        NSLayoutConstraint.activate([
+            ticketLabel.topAnchor.constraint(
+                equalTo: placeDescriptionLabel.bottomAnchor,
+                constant: 8
+            ),
+            ticketLabel.leadingAnchor.constraint(
+                equalTo: ticketImageView.trailingAnchor,
+                constant: 4
+            ),
+            ticketLabel.centerYAnchor.constraint(
+                equalTo: ticketImageView.centerYAnchor
+            ),
         ])
     }
 
     func configure(with place: Place) {
-        if let url = URL(string: place.cover) {
-            URLSession.shared.dataTask(with: url) {
-                data, _, _ in
-                if let data = data, let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self.itemImageView.image = image
-                    }
-                } else {
-                    DispatchQueue.main.async {
-                        self.itemImageView.image = UIImage(named: "logoImage")
-                    }
+        let networkService = NetworkService()
+        networkService.getData(
+            from: place.cover,
+            transformTo: { UIImage(data: $0) }
+        ) { result in
+            switch result {
+            case .success(let image):
+                DispatchQueue.main.async {
+                    self.placeImageView.image = image
                 }
-            }.resume()
+            case .failure(let error):
+                print(
+                    "❌ Erro ao buscar as imagens dos estabelecimentos: \(error.localizedDescription)"
+                )
+                DispatchQueue.main.async {
+                    self.placeImageView.image = UIImage(named: "logo-nearby")
+                }
+            }
         }
-        titleLabel.text = place.name
-        descriptionLabel.text = place.description
+        placeNameLabel.text = place.name
+        placeDescriptionLabel.text = place.description
         if place.coupons == 0 {
-            ticketIconView.tintColor = Colors.gray400
+            ticketImageView.tintColor = Colors.gray400
         }
         ticketLabel.text = "\(place.coupons) cupons disponíveis"
     }
