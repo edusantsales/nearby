@@ -1,5 +1,5 @@
 import Foundation
 
-public protocol WelcomeFlowDelegate: AnyObject {
+protocol WelcomeFlowDelegate: AnyObject {
     func goToHome()
 }
