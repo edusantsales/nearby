@@ -62,10 +62,9 @@ class NetworkService {
 
     private func getURLSession(
         from path: String,
+        retryCount: Int = 2,
         completion: @escaping (Result<Data, Error>) -> Void
     ) {
-        var retryCount = 2
-
         guard let url = URL(string: path) else {
             let invalidUrlError = NSError(
                 domain: "InvalidURL",
@@ -86,9 +85,9 @@ class NetworkService {
                 print("⚠️ Erro de rede: \(error.localizedDescription)")
                 if retryCount > 0 {
                     print("🔁 Tentando novamente... (\(retryCount) restante(s))")
-                    retryCount = retryCount - 1
                     self.getURLSession(
                         from: path,
+                        retryCount: retryCount - 1,
                         completion: completion
                     )
                 } else {
