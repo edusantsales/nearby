@@ -1,0 +1,512 @@
+{
+  "categories": [
+    {
+      "id": "146b1a88-b3d3-4232-8b8f-c1f006f1e86d",
+      "name": "Alimentação"
+    },
+    {
+      "id": "52e81585-f71a-44cd-8bd0-49771e45da44",
+      "name": "Compras"
+    },
+    {
+      "id": "57d6e5ff-35f6-4d21-a521-84f23d511d25",
+      "name": "Hospedagem"
+    },
+    {
+      "id": "826910d4-187d-4c15-88f4-382b7e056739",
+      "name": "Cinema"
+    },
+    {
+      "id": "abce52cf-b33b-4b3c-8972-eb72c66c83e4",
+      "name": "Padaria"
+    }
+  ],
+  "rules": [
+    {
+      "id": "02ffd72d-6558-44d2-ba32-a1383c870b85",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "012576ea-4441-4b8a-89e5-d5f32104c7c4"
+    },
+    {
+      "id": "9478ba64-8f03-4aad-a5f6-52b754aa263e",
+      "description": "Disponível até 15/01/2025",
+      "market_id": "2bc11e34-5f30-4ba0-90fa-c1c98f649281"
+    },
+    {
+      "id": "d7b62c85-16e6-4195-bdd0-470c9a63a47a",
+      "description": "Disponível até 20/01/2025",
+      "market_id": "4197b830-aa9c-40d4-a22e-c05043588a77"
+    },
+    {
+      "id": "df915ac7-e346-4019-b714-d19421c964f4",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "4209c72f-9d14-410c-91af-c24d08f177cc"
+    },
+    {
+      "id": "29538a12-605e-4927-82cf-7eaf25a0cee7",
+      "description": "Disponível até 15/01/2025",
+      "market_id": "4e6dd864-f04a-4711-9db2-e5624fd32b8e"
+    },
+    {
+      "id": "f1653132-fa1e-4979-bfb3-4f0b32b93ccf",
+      "description": "Disponível até 20/01/2025",
+      "market_id": "6dbf1cd5-c20a-4e6a-bc9a-a26069825d2c"
+    },
+    {
+      "id": "eb61a588-bcc0-4517-89d4-6c6789900abe",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "756b1d53-cc5b-4995-8ebd-8eee3dae01af"
+    },
+    {
+      "id": "8bc4beee-9d01-4dbd-9b33-22d8087994bb",
+      "description": "Disponível até 10/01/2025",
+      "market_id": "77a5d5eb-bcfa-4457-916d-a5b6fe7aa183"
+    },
+    {
+      "id": "b03d75a8-71cb-4753-a45a-5dbb9f2a7af8",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "78806cca-cfb0-45bc-8dc3-c57a42f0da01"
+    },
+    {
+      "id": "1f30db7f-7592-474e-a5d2-7a1110dc73f6",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "78ced7b1-436b-42ca-9c66-747f2b671321"
+    },
+    {
+      "id": "7779da37-c1ef-4d31-88cd-d35c93a0ba80",
+      "description": "Disponível até 15/01/2025",
+      "market_id": "7be85f5b-533f-4974-8c9e-75cae740041c"
+    },
+    {
+      "id": "98d287df-e65a-44d6-8605-8f7c36dae217",
+      "description": "Disponível até 20/01/2025",
+      "market_id": "806c7934-037b-4dcd-99bb-c0fc6f2c5a45"
+    },
+    {
+      "id": "5e4de7be-0a32-4c6b-930f-942bbd444a59",
+      "description": "Disponível até 07/01/2025",
+      "market_id": "8cf0433e-68de-4c2a-9fff-c0c2941ec521"
+    },
+    {
+      "id": "00204849-0b4a-4b83-a2aa-05dc2dbb356c",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "b2c3014d-64bd-4c01-95e9-7f408e12ff6f"
+    },
+    {
+      "id": "3a0f8408-0917-498f-b5a6-bea0b0291ea2",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "b3a4dab2-1b83-4015-ba95-22f5770c6108"
+    },
+    {
+      "id": "84a38bda-7db3-4f88-a759-e5940f80d3c3",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "bde73364-95c5-46e4-8084-79a7ca3824c4"
+    },
+    {
+      "id": "1ab6c523-ee94-41ba-afa7-36f63d7989e3",
+      "description": "Disponível até 15/01/2025",
+      "market_id": "c5271f4e-6058-4eda-8b08-0e7fb0b73a0d"
+    },
+    {
+      "id": "2517f0f5-7dc7-4a68-9c4c-fd65466b635b",
+      "description": "Disponível até 20/01/2025",
+      "market_id": "d21b8cad-8d01-4ffd-8117-a34d613cdcf5"
+    },
+    {
+      "id": "04d04ca1-a4a4-4747-9577-8ba06691a112",
+      "description": "Disponível até 31/12/2024",
+      "market_id": "def71683-e89f-4c3b-a652-868a02f54ae9"
+    },
+    {
+      "id": "2b94d00b-4dcc-4c9c-98e6-ef33845f91b3",
+      "description": "Disponível até 15/01/2025",
+      "market_id": "e4949574-a579-4b07-a005-3fc4b7339752"
+    },
+    {
+      "id": "93d3a122-ca97-49dc-a461-4b709026ac48",
+      "description": "Disponível até 25/02/2025",
+      "market_id": "ea097b60-d0fb-41aa-ad44-a7ed850c9ecd"
+    },
+    {
+      "id": "c58008eb-e8a6-43c2-8083-84798b122e31",
+      "description": "Disponível até 01/02/2025",
+      "market_id": "ebfecf67-fe4d-4137-90f0-b7083fd58da1"
+    },
+    {
+      "id": "253c32b0-aa63-45ff-9e6e-3fd2c07e1889",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "012576ea-4441-4b8a-89e5-d5f32104c7c4"
+    },
+    {
+      "id": "dc7ebd3f-c56e-48af-8f9a-6692dcfa4da5",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "2bc11e34-5f30-4ba0-90fa-c1c98f649281"
+    },
+    {
+      "id": "80016b36-4072-4c83-a7cb-536d2810cfa7",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "4197b830-aa9c-40d4-a22e-c05043588a77"
+    },
+    {
+      "id": "bc924c65-2dc0-412e-8a2e-9f3b4e30b948",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "4209c72f-9d14-410c-91af-c24d08f177cc"
+    },
+    {
+      "id": "f5da1923-7cc5-4c90-b743-9c831f949fb8",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "4e6dd864-f04a-4711-9db2-e5624fd32b8e"
+    },
+    {
+      "id": "8748516d-0a29-48bd-a44a-040492ea5376",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "6dbf1cd5-c20a-4e6a-bc9a-a26069825d2c"
+    },
+    {
+      "id": "cda7502a-2ac0-4a07-87ef-9cad004ac7fd",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "756b1d53-cc5b-4995-8ebd-8eee3dae01af"
+    },
+    {
+      "id": "ae2dd76a-5c68-4003-b0a1-b1143670179a",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "77a5d5eb-bcfa-4457-916d-a5b6fe7aa183"
+    },
+    {
+      "id": "203fd014-e8b8-4f0a-b0bf-dcd9e74bd449",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "78806cca-cfb0-45bc-8dc3-c57a42f0da01"
+    },
+    {
+      "id": "f868dd40-69ad-46b6-b9e5-544c2510d7a4",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "78ced7b1-436b-42ca-9c66-747f2b671321"
+    },
+    {
+      "id": "c02432fe-066e-407e-a9da-ac89c643dceb",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "7be85f5b-533f-4974-8c9e-75cae740041c"
+    },
+    {
+      "id": "e1b1c6b3-1783-416d-9d48-e7bcb8a0154a",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "806c7934-037b-4dcd-99bb-c0fc6f2c5a45"
+    },
+    {
+      "id": "4e4f3201-2e2a-4213-b20f-3f5e544bdbf7",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "8cf0433e-68de-4c2a-9fff-c0c2941ec521"
+    },
+    {
+      "id": "6845a180-cc01-4724-a66e-54f9e69d8646",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "b2c3014d-64bd-4c01-95e9-7f408e12ff6f"
+    },
+    {
+      "id": "d6316330-e3d9-441d-91bd-6c5121a2c45a",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "b3a4dab2-1b83-4015-ba95-22f5770c6108"
+    },
+    {
+      "id": "ad0b88d6-fb6a-49dd-a4d1-7c4b43af9886",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "bde73364-95c5-46e4-8084-79a7ca3824c4"
+    },
+    {
+      "id": "2937b0eb-08f3-4753-ae72-a4ea90a52fa4",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "c5271f4e-6058-4eda-8b08-0e7fb0b73a0d"
+    },
+    {
+      "id": "ca4c5cce-48c3-46e3-a43b-178fff60a8b5",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "d21b8cad-8d01-4ffd-8117-a34d613cdcf5"
+    },
+    {
+      "id": "77094a2a-1d7d-49b0-8873-6768eadb1699",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "def71683-e89f-4c3b-a652-868a02f54ae9"
+    },
+    {
+      "id": "5729fe4d-9c5e-4dea-97b5-8fc749dbbeef",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "e4949574-a579-4b07-a005-3fc4b7339752"
+    },
+    {
+      "id": "88cc8d5d-f765-4b88-a4d3-2c74b24f83aa",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "ea097b60-d0fb-41aa-ad44-a7ed850c9ecd"
+    },
+    {
+      "id": "081b940e-3b96-445c-9d1b-d47a0d6784b0",
+      "description": "Válido apenas para consumo no local",
+      "market_id": "ebfecf67-fe4d-4137-90f0-b7083fd58da1"
+    }
+  ],
+  "markets": [
+    {
+      "id": "012576ea-4441-4b8a-89e5-d5f32104c7c4",
+      "name": "Sabor Grill",
+      "description": "Churrascaria com cortes nobres e buffet variado. Experiência completa para os amantes de carne.",
+      "coupons": 10,
+      "latitude": -23.55974230991911,
+      "longitude": -46.65814845249887,
+      "address": "Av. Paulista - Bela Vista",
+      "phone": "(11) 94567-1212",
+      "cover": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=400&h=300",
+      "category_id": "146b1a88-b3d3-4232-8b8f-c1f006f1e86d"
+    },
+    {
+      "id": "2bc11e34-5f30-4ba0-90fa-c1c98f649281",
+      "name": "Café Central",
+      "description": "Café aconchegante com opções de lanches e bebidas artesanais. Perfeito para uma pausa.",
+      "coupons": 10,
+      "latitude": -23.55945710850444,
+      "longitude": -46.66252581753144,
+      "address": "Alameda Jaú - Jardim Paulista",
+      "phone": "(12) 3456-7890",
+      "cover": "https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400&h=300",
+      "category_id": "146b1a88-b3d3-4232-8b8f-c1f006f1e86d"
+    },
+    {
+      "id": "4197b830-aa9c-40d4-a22e-c05043588a77",
+      "name": "Burguer Up",
+      "description": "Hambúrgueres gourmet preparados na hora. Ingredientes frescos e combinações únicas.",
+      "coupons": 9,
+      "latitude": -23.56011117635681,
+      "longitude": -46.65636680690605,
+      "address": "Rua Peixoto Gomide - Jardim Paulista",
+      "phone": "(13) 98765-4321",
+      "cover": "https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=400&h=300",
+      "category_id": "146b1a88-b3d3-4232-8b8f-c1f006f1e86d"
+    },
+    {
+      "id": "4209c72f-9d14-410c-91af-c24d08f177cc",
+      "name": "Doce & Delícia",
+      "description": "Confeitaria com doces e sobremesas incríveis. Bolo de vitrine e especialidades artesanais.",
+      "coupons": 10,
+      "latitude": -23.56255967492558,
+      "longitude": -46.6529362971225,
+      "address": "Rua Treze de Maio - Jardim Paulista",
+      "phone": "(14) 2345-6789",
+      "cover": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&h=300",
+      "category_id": "146b1a88-b3d3-4232-8b8f-c1f006f1e86d"
+    },
+    {
+      "id": "4e6dd864-f04a-4711-9db2-e5624fd32b8e",
+      "name": "Verde Vida",
+      "description": "Restaurante vegano com pratos saudáveis e saborosos. Comida natural em um ambiente acolhedor.",
+      "coupons": 10,
+      "latitude": -23.56383902167784,
+      "longitude": -46.65801352185607,
+      "address": "Alameda Jaú - Jardim Paulista",
+      "phone": "(15) 9876-5432",
+      "cover": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=400&h=300",
+      "category_id": "146b1a88-b3d3-4232-8b8f-c1f006f1e86d"
+    },
+    {
+      "id": "6dbf1cd5-c20a-4e6a-bc9a-a26069825d2c",
+      "name": "Loja Nova",
+      "description": "Roupas e acessórios modernos para o dia a dia. Estilo casual com ótimos preços.",
+      "coupons": 10,
+      "latitude": -23.56458018494341,
+      "longitude": -46.66202724389377,
+      "address": "Rua José Maria Lisboa - Jardim Paulista",
+      "phone": "(16) 3456-7890",
+      "cover": "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&h=300",
+      "category_id": "52e81585-f71a-44cd-8bd0-49771e45da44"
+    },
+    {
+      "id": "756b1d53-cc5b-4995-8ebd-8eee3dae01af",
+      "name": "Tech Plus",
+      "description": "Loja de eletrônicos com produtos de última geração. Gadgets e acessórios para todos.",
+      "coupons": 10,
+      "latitude": -23.56183474903135,
+      "longitude": -46.66355095952655,
+      "address": "Alameda Franca - Cerqueira César",
+      "phone": "(17) 9876-5432",
+      "cover": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300",
+      "category_id": "52e81585-f71a-44cd-8bd0-49771e45da44"
+    },
+    {
+      "id": "77a5d5eb-bcfa-4457-916d-a5b6fe7aa183",
+      "name": "Casa Luxo",
+      "description": "Decoração sofisticada para casa e escritório. Produtos exclusivos para ambientes elegantes.",
+      "coupons": 10,
+      "latitude": -23.55870738391179,
+      "longitude": -46.66172705741049,
+      "address": "Alameda Santos - Jardim Paulista",
+      "phone": "(18) 2345-6789",
+      "cover": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300",
+      "category_id": "52e81585-f71a-44cd-8bd0-49771e45da44"
+    },
+    {
+      "id": "78806cca-cfb0-45bc-8dc3-c57a42f0da01",
+      "name": "BookMart",
+      "description": "Livraria especializada em best-sellers e clássicos. Espaço aconchegante para leitura.",
+      "coupons": 10,
+      "latitude": -23.5563768834889,
+      "longitude": -46.65941413229616,
+      "address": "Rua Luís Coelho - Consolação",
+      "phone": "(19) 9876-5432",
+      "cover": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&h=300",
+      "category_id": "52e81585-f71a-44cd-8bd0-49771e45da44"
+    },
+    {
+      "id": "78ced7b1-436b-42ca-9c66-747f2b671321",
+      "name": "Green Market",
+      "description": "Produtos orgânicos e saudáveis para o seu dia a dia. Alimentos frescos e sustentáveis.",
+      "coupons": 10,
+      "latitude": -23.55473446617852,
+      "longitude": -46.65859874077045,
+      "address": "Rua Matias Aires - Consolação",
+      "phone": "(11) 8765-4321",
+      "cover": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?w=400&h=300",
+      "category_id": "52e81585-f71a-44cd-8bd0-49771e45da44"
+    },
+    {
+      "id": "7be85f5b-533f-4974-8c9e-75cae740041c",
+      "name": "Hotel Céu Azul",
+      "description": "Hotel moderno com quartos aconchegantes. Ideal para relaxar.",
+      "coupons": 10,
+      "latitude": -23.55412062614202,
+      "longitude": -46.65203378772091,
+      "address": "Rua Dr. Penaforte Mendes - Bela Vista ",
+      "phone": "(12) 1234-5678",
+      "cover": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1?w=400&h=300",
+      "category_id": "57d6e5ff-35f6-4d21-a521-84f23d511d25"
+    },
+    {
+      "id": "806c7934-037b-4dcd-99bb-c0fc6f2c5a45",
+      "name": "Casa Serena",
+      "description": "Pousada charmosa no coração da cidade, com ambiente tranquilo e serviço personalizado.",
+      "coupons": 10,
+      "latitude": -23.55165437523632,
+      "longitude": -46.64979551221052,
+      "address": "Rua Frei Caneca - Consolação",
+      "phone": "(13) 9876-5432",
+      "cover": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=400&h=300",
+      "category_id": "57d6e5ff-35f6-4d21-a521-84f23d511d25"
+    },
+    {
+      "id": "8cf0433e-68de-4c2a-9fff-c0c2941ec521",
+      "name": "Suites Urban",
+      "description": "Acomodações sofisticadas no centro da cidade. Perfeito para viagens de negócios ou lazer.",
+      "coupons": 10,
+      "latitude": -23.55466938453421,
+      "longitude": -46.65173990250655,
+      "address": "R. Dr. Penaforte Mendes - Bela Vista, São Paulo",
+      "phone": "(14) 2345-6789",
+      "cover": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300",
+      "category_id": "57d6e5ff-35f6-4d21-a521-84f23d511d25"
+    },
+    {
+      "id": "b2c3014d-64bd-4c01-95e9-7f408e12ff6f",
+      "name": "Villa Encanto",
+      "description": "Chalés rústicos em uma área tranquila. Experiência de hospedagem exclusiva com total privacidade.",
+      "coupons": 10,
+      "latitude": -23.56516128294298,
+      "longitude": -46.66117774949042,
+      "address": "Rua José Maria Lisboa - Jardins",
+      "phone": "(15) 9876-5432",
+      "cover": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=300",
+      "category_id": "57d6e5ff-35f6-4d21-a521-84f23d511d25"
+    },
+    {
+      "id": "b3a4dab2-1b83-4015-ba95-22f5770c6108",
+      "name": "Estalagem Real",
+      "description": "Hotel boutique com design clássico e atendimento de excelência. Uma estadia luxuosa e confortável.",
+      "coupons": 10,
+      "latitude": -23.56210372033115,
+      "longitude": -46.65926304595067,
+      "address": "Alameda Jaú - Jardim Paulista",
+      "phone": "(16) 3456-7890",
+      "cover": "https://images.unsplash.com/photo-1558979158-65a1eaa08691?w=400&h=300",
+      "category_id": "57d6e5ff-35f6-4d21-a521-84f23d511d25"
+    },
+    {
+      "id": "bde73364-95c5-46e4-8084-79a7ca3824c4",
+      "name": "CineStar",
+      "description": "Cinema moderno com salas confortáveis e tecnologia de última geração.",
+      "coupons": 10,
+      "latitude": -23.5484823811466,
+      "longitude": -46.65914241644639,
+      "address": "Av. Angélica - Consolação",
+      "phone": "(17) 9876-5432",
+      "cover": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=400&h=300",
+      "category_id": "826910d4-187d-4c15-88f4-382b7e056739"
+    },
+    {
+      "id": "c5271f4e-6058-4eda-8b08-0e7fb0b73a0d",
+      "name": "MovieLand",
+      "description": "Espaço cultural com uma seleção variada de filmes e festivais exclusivos.",
+      "coupons": 10,
+      "latitude": -23.54445976557621,
+      "longitude": -46.63955726129235,
+      "address": "R. 24 de Maio - República",
+      "phone": "(11) 2345-6789",
+      "cover": "https://images.unsplash.com/photo-1497493292307-31c376b6e479?w=400&h=300",
+      "category_id": "826910d4-187d-4c15-88f4-382b7e056739"
+    },
+    {
+      "id": "d21b8cad-8d01-4ffd-8117-a34d613cdcf5",
+      "name": "TelaMax",
+      "description": "Cinema de bairro com atmosfera aconchegante e opções de filmes clássicos e lançamentos.",
+      "coupons": 10,
+      "latitude": -23.54552514502835,
+      "longitude": -46.64143197478661,
+      "address": "Rua Sete de Abril - República",
+      "phone": "(19) 9876-5432",
+      "cover": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=400&h=300",
+      "category_id": "826910d4-187d-4c15-88f4-382b7e056739"
+    },
+    {
+      "id": "def71683-e89f-4c3b-a652-868a02f54ae9",
+      "name": "Grão Dourado",
+      "description": "Famosa por seus croissants e pães de fermentação natural.",
+      "coupons": 10,
+      "latitude": -23.54000232292889,
+      "longitude": -46.64680389012777,
+      "address": "Av. Duque de Caxias  - Santa Ifigênia",
+      "phone": "(11) 5432-1098",
+      "cover": "https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=400&h=300",
+      "category_id": "abce52cf-b33b-4b3c-8972-eb72c66c83e4"
+    },
+    {
+      "id": "e4949574-a579-4b07-a005-3fc4b7339752",
+      "name": "Pão & Cia",
+      "description": "Padaria artesanal com pães frescos e quitutes caseiros todos os dias.",
+      "coupons": 10,
+      "latitude": -23.52353781103368,
+      "longitude": -46.62669283245777,
+      "address": "Rua Guaporé - Luz ",
+      "phone": "(11) 8765-4321",
+      "cover": "https://images.unsplash.com/photo-1541167760496-1628856ab772?w=400&h=300",
+      "category_id": "abce52cf-b33b-4b3c-8972-eb72c66c83e4"
+    },
+    {
+      "id": "ea097b60-d0fb-41aa-ad44-a7ed850c9ecd",
+      "name": "Doce Massa",
+      "description": "Especializada em doces e salgados, com opções de café da manhã completo.",
+      "coupons": 10,
+      "latitude": -23.52997251738682,
+      "longitude": -46.62928337478692,
+      "address": "Rua Alfredo Maia - Luz",
+      "phone": "(11) 1234-5678",
+      "cover": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300",
+      "category_id": "abce52cf-b33b-4b3c-8972-eb72c66c83e4"
+    },
+    {
+      "id": "ebfecf67-fe4d-4137-90f0-b7083fd58da1",
+      "name": "Padaria da cidade",
+      "description": "Padaria de bairro com pães rústicos e tradicionais assados na hora.",
+      "coupons": 10,
+      "latitude": -23.53459455975156,
+      "longitude": -46.63463225944563,
+      "address": "Praça da Luz - Bom Retiro",
+      "phone": "(11) 9876-5432",
+      "cover": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300",
+      "category_id": "abce52cf-b33b-4b3c-8972-eb72c66c83e4"
+    }
+  ]
+}
