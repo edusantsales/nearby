@@ -1,0 +1,139 @@
+# ===========================================================================
+# Dart & Flutter
+# ===========================================================================
+# ATENÇÃO: Nunca ignore arquivos *.lock (como pubspec.lock, Podfile.lock) em 
+# aplicações finais. Eles garantem que todo o time e a esteira de CI/CD utilizem 
+# exatamente as mesmas versões das dependências, evitando builds "quebrados".
+# Para packages/libraries Dart, é recomendado não commitar os arquivos .lock para permitir flexibilidade na escolha das versões. 
+# Mais informações: https://dart.dev/guides/libraries/private-files#pubspeclock
+*.lock
+!pubspec.lock
+!Podfile.lock
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+coverage/
+
+# ===========================================================================
+# Builds
+# ===========================================================================
+.build/
+.buildlog/
+build/
+**/build/*
+
+# Informações de build e debug
+**/doc/api/
+**/ios/Flutter/.last_build_id
+app.*.symbols
+app.*.map.json
+devtools_options.yaml
+
+# ===========================================================================
+# Registrants e Código Gerado (codegen/build_runner)
+# ===========================================================================
+lib/generated_plugin_registrant.dart
+**/android/**/GeneratedPluginRegistrant.java
+**/ios/**/GeneratedPluginRegistrant.{h,m}
+**/macos/**/GeneratedPluginRegistrant.swift
+
+# Bibliotecas (freezed, json_serializable, mobx, get_it, etc)
+*.g.dart
+*.freezed.dart
+*.chopper.dart
+*.config.dart
+*.mocks.dart
+
+# ===========================================================================
+# Android específico
+# ===========================================================================
+android/app/debug
+android/app/profile
+android/app/release
+.gradle/
+*.keystore
+!debug.keystore
+key.properties
+**/*.jks
+local.properties
+gradle-wrapper.jar
+.cxx/
+captures/
+google-play-key.json
+
+# ===========================================================================
+# iOS / macOS específico
+# ===========================================================================
+*.mobileprovision
+*.cer
+*.p12
+*.p8
+.swiftpm/
+# ATENÇÃO: Nunca ignore a pasta **/macos/Flutter/** por completo, 
+# pois arquivos importantes como AppInfo.xcconfig e configs residem lá.
+**/macos/Flutter/ephemeral/
+**/ios/Pods/
+**/macos/Pods/
+**/ios/.symlinks/
+**/macos/.symlinks/
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/DerivedData/
+**/dSYMs/
+*.dSYM/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcarchive/
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+.symlinks/
+Icon?
+
+# ===========================================================================
+# Windows e Linux específico
+# ===========================================================================
+**/windows/flutter/ephemeral/
+**/linux/flutter/ephemeral/
+
+# ===========================================================================
+# Sistema Operacional, Ferramentas e IDEs
+# ===========================================================================
+.DS_Store
+*.swp
+.history
+migrate_working_dir/
+
+# IntelliJ / Android Studio
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+# A pasta .vscode geralmente é recomendada NÃO ser ignorada para compartilhar 
+# integrações e tasks com a equipe. Descomente a linha abaixo caso queira ignorar:
+#.vscode/
+.vscode/env.json
+
+# ===========================================================================
+# Ambiente e Secrets
+# ===========================================================================
+.env
+.env.*
+build_vars.sh
+*.secret
+.firebase/
+
+# ===========================================================================
+# Outros e Logs
+# ===========================================================================
+*.class
+*.log
+*.pyc
+.atom/
+.svn/
